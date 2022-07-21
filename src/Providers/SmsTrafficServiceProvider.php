@@ -22,7 +22,7 @@ class SmsTrafficServiceProvider extends ServiceProvider
     public function boot(ConfigRepository $configRepository): void
     {
         $this->publishes([
-            __DIR__.'/config/sms-traffic.php' => $this->app->configPath().'/sms-traffic.php',
+            __DIR__.'/../config/sms-traffic.php' => $this->app->configPath().'/sms-traffic.php',
         ], 'sms-traffic-config');
     }
 
