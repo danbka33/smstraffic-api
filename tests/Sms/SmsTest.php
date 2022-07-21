@@ -1,12 +1,13 @@
 <?php
-namespace DevGuru\SmsTrafficApi\Tests\Sms;
+namespace Danbka33\SmsTrafficApi\Tests\Sms;
 
-use DevGuru\SmsTrafficApi\Sms\Sms;
+use Danbka33\SmsTrafficApi\Sms\Sms;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Class SmsTest
  */
-class SmsTest extends \PHPUnit_Framework_TestCase
+class SmsTest extends TestCase
 {
     /**
      * testDefaultParameter

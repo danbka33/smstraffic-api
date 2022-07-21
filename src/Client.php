@@ -1,17 +1,17 @@
 <?php
-namespace DevGuru\SmsTrafficApi;
+namespace Danbka33\SmsTrafficApi;
 
-use DevGuru\SmsTrafficApi\Exception\ParsingException;
-use DevGuru\SmsTrafficApi\Exception\SendingException;
-use DevGuru\SmsTrafficApi\Exception\TransportException;
-use DevGuru\SmsTrafficApi\Sms\AbstractSms;
-use DevGuru\SmsTrafficApi\Transport\GuzzleHttpTransport;
-use DevGuru\SmsTrafficApi\Transport\TransportInterface;
+use Danbka33\SmsTrafficApi\Exception\ParsingException;
+use Danbka33\SmsTrafficApi\Exception\SendingException;
+use Danbka33\SmsTrafficApi\Exception\TransportException;
+use Danbka33\SmsTrafficApi\Sms\AbstractSms;
+use Danbka33\SmsTrafficApi\Transport\GuzzleHttpTransport;
+use Danbka33\SmsTrafficApi\Transport\TransportInterface;
 use Exception;
 
 /**
  * Class Client
- * @package DevGuru\SmsTrafficApi
+ * @package Danbka33\SmsTrafficApi
  */
 class Client
 {

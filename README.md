@@ -6,8 +6,8 @@ Usage:
 
 ```php
     
-    use DevGuru\SmsTrafficApi\Client;
-    use DevGuru\SmsTrafficApi\Sms\Sms;
+    use Danbka33\SmsTrafficApi\Client;
+    use Danbka33\SmsTrafficApi\Sms\Sms;
 
     $client = new Client('login', 'password', 'originator');
     $result = $client->send(new Sms('Phone', 'Message'));

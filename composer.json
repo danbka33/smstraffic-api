@@ -1,25 +1,45 @@
 {
-    "name": "devguru/smstraffic-api",
+    "name": "danbka33/smstraffic-api",
     "description": "SMS Traffic API implementation",
     "license": "MIT",
     "authors": [
         {
             "name": "Alexander Rodionov",
             "email": "web@devgu.ru"
+        },
+        {
+            "name": "Danila Bolshakov"
         }
     ],
     "require": {
-        "php": ">=5.5.0",
+        "laravel/framework": "^8.12",
+        "php": ">=7.1",
         "ext-libxml": "*",
         "ext-pcre": "*",
-        "guzzlehttp/guzzle": "~6.0"
+        "guzzlehttp/guzzle": "~7.0"
     },
     "autoload":     {
-        "psr-4": { "DevGuru\\SmsTrafficApi\\": "src/DevGuru/SmsTrafficApi" }
+        "psr-4": { "Danbka33\\SmsTrafficApi\\": "src/"}
     },
     "autoload-dev": {
         "psr-4": {
-            "DevGuru\\SmsTrafficApi\\Tests\\": "tests/DevGuru/SmsTrafficApi/Tests"
+            "Danbka33\\SmsTrafficApi\\Tests\\": "tests/"
         }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Danbka33\\SmsTrafficApi\\Providers\\SmsTrafficServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5 || ^8.4 || ^9"
     }
 }

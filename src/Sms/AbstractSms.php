@@ -1,5 +1,5 @@
 <?php
-namespace DevGuru\SmsTrafficApi\Sms;
+namespace Danbka33\SmsTrafficApi\Sms;
 
 use DateTime;
 

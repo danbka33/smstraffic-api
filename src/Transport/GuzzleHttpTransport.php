@@ -1,5 +1,5 @@
 <?php
-namespace DevGuru\SmsTrafficApi\Transport;
+namespace Danbka33\SmsTrafficApi\Transport;
 
 use GuzzleHttp\Client as HttpClient;
 

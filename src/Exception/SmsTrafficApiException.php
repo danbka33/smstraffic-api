@@ -1,5 +1,5 @@
 <?php
-namespace DevGuru\SmsTrafficApi\Exception;
+namespace Danbka33\SmsTrafficApi\Exception;
 
 use Exception;
 
