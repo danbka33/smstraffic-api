@@ -1,6 +1,6 @@
 {
-    "name": "danbka33/smstraffic-api",
-    "description": "SMS Traffic API implementation",
+    "name": "danbka33/smstraffic-api-laravel",
+    "description": "SMS Traffic API implementation with Laravel support",
     "license": "MIT",
     "authors": [
         {
@@ -8,7 +8,8 @@
             "email": "web@devgu.ru"
         },
         {
-            "name": "Danila Bolshakov"
+            "name": "Danila Bolshakov",
+            "email": "danbka33rus@gmail.com"
         }
     ],
     "require": {
