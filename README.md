@@ -5,21 +5,9 @@ Protocol.
 
 ## Install
 
-Add to composer.json:
-
-```json
-"repositories": [
-    {
-        "type": "vcs",
-        "url": "https://github.com/danbka33/smstraffic-api"
-    }
-],
-```
-
-Install/upgrade package
 
 ```bash
-composer require danbka33/smstraffic-api
+composer require danbka33/smstraffic-api-laravel
 ```
 
 Add variables to .env
