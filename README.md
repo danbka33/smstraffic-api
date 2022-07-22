@@ -9,8 +9,7 @@ Protocol.
 composer require danbka33/smstraffic-api-laravel
 ```
 
-
-This package makes use of [Laravels package auto-discovery mechanism](https://medium.com/@taylorotwell/package-auto-discovery-in-laravel-5-5-ea9e3ab20518), which means if you don't install dev dependencies in production, it also won't be loaded.
+This package makes use of [Laravels package auto-discovery mechanism](https://medium.com/@taylorotwell/package-auto-discovery-in-laravel-5-5-ea9e3ab20518).
 
 If for some reason you want manually control this:
 - add the package to the `extra.laravel.dont-discover` key in `composer.json`, e.g.
