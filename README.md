@@ -1,17 +1,48 @@
 # SMS Traffic API
 
-[SMS Traffic](http://www.smstraffic.ru/) is full-cycle SMS aggregator. This project is an implementation of API by HTTP Protocol.
+[SMS Traffic](http://www.smstraffic.ru/) is full-cycle SMS aggregator. This project is an implementation of API by HTTP
+Protocol.
 
-Usage:
+## Install
 
-```php
-    
-    use Danbka33\SmsTrafficApi\Client;
-    use Danbka33\SmsTrafficApi\Sms\Sms;
+Add to composer.json:
 
-    $client = new Client('login', 'password', 'originator');
-    $result = $client->send(new Sms('Phone', 'Message'));
-
+```json
+"repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/danbka33/smstraffic-api"
+    }
+],
 ```
 
-## Documentation
+Install/upgrade package
+
+```bash
+composer require danbka33/smstraffic-api
+```
+
+Add variables to .env
+
+```dotenv
+SMS_TRAFFIC_LOGIN=login
+SMS_TRAFFIC_PASSWORD=password
+SMS_TRAFFIC_ORIGINATOR=originator
+```
+
+## Usage
+
+```php
+use Danbka33\SmsTrafficApi\Client;
+use Danbka33\SmsTrafficApi\Sms\Sms;
+
+$client = app()->get(Client::class);
+$result = $client->send(new Sms($phone, $message));
+```
+
+## Publish config file
+
+```bash
+php artisan vendor:publish --tag=sms-traffic-config
+```
+
