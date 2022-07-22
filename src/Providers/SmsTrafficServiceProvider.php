@@ -8,7 +8,7 @@ use Illuminate\Support\ServiceProvider;
 
 class SmsTrafficServiceProvider extends ServiceProvider
 {
-    public function register(): void
+    public function register()
     {
         $this->app->singleton(Client::class, function () {
             return new Client(
@@ -19,7 +19,7 @@ class SmsTrafficServiceProvider extends ServiceProvider
         });
     }
 
-    public function boot(ConfigRepository $configRepository): void
+    public function boot(ConfigRepository $configRepository)
     {
         $this->publishes([
             __DIR__.'/../config/sms-traffic.php' => $this->app->configPath().'/sms-traffic.php',
